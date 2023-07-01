@@ -1,5 +1,4 @@
-import { useTheme } from "@emotion/react";
-import { Typography, createTheme } from "@mui/material";
+import { createTheme } from "@mui/material";
 
 const firstTheme = createTheme({
   palette: {

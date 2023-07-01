@@ -1,12 +1,11 @@
 import { CssBaseline, Container, Grid, Box } from "@mui/material";
-import { grey } from "@mui/material/colors";
 import LoginBox from "../components/LoginBox";
 import "../assets/HomePage/style/Iphone14.scss";
 import screenshot1 from "../assets/HomePage/images/screenshot1-2x.png";
 import screenshot2 from "../assets/HomePage/images/screenshot2-2x.png";
 import screenshot3 from "../assets/HomePage/images/screenshot3-2x.png";
 import screenshot4 from "../assets/HomePage/images/screenshot4-2x.png";
-import gallery from "../assets/HomePage/images/screenshot0-2x.jpg";
+// import gallery from "../assets/HomePage/images/screenshot0-2x.jpg";
 import framed from "../assets/HomePage/images/screenshotframed.png";
 import Fade from "@mui/material/Fade";
 import { useState, useRef, useEffect } from "react";
@@ -14,11 +13,11 @@ import { useState, useRef, useEffect } from "react";
 export default function HomePage() {
   const count = useRef(0);
   var [screenshot, setScreenshot] = useState(screenshot1);
-  var screenshots = [screenshot1, screenshot2, screenshot3, screenshot4];
+  const screenshots = useRef([screenshot1, screenshot2, screenshot3, screenshot4]);
   useEffect(() => {
     let screenshotTimer = setTimeout(() => {
       count.current = (count.current + 1) % 4;
-      setScreenshot(screenshots[count.current]);
+      setScreenshot(screenshots.current[count.current]);
     }, 5000);
     return () => {
       clearTimeout(screenshotTimer);
@@ -78,7 +77,7 @@ export default function HomePage() {
             </Box>
           </Grid>
 
-          <Grid item md={6} xs={{ justifyContent: "start",display:"flex"}}>
+          <Grid item md={6} sx={{ justifyContent: "start",display:"flex",flexDirection:"column"}}>
             <LoginBox />
           </Grid>
         </Grid>
