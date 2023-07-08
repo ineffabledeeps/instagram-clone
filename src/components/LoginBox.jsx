@@ -51,7 +51,7 @@ export default function SignupBox() {
   };
 
   return (
-    <Box sx={{ width: 550 }}>
+    <Box sx={{ maxWidth: 550 }}>
       <Box
         type="form"
         sx={{

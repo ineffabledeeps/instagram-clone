@@ -54,7 +54,7 @@ export default function LoginBox() {
   };
 
   return (
-    <Box sx={{ width: 560 }}>
+    <Box sx={{ maxWidth: 560 }}>
       <Box
         type="form"
         sx={{
