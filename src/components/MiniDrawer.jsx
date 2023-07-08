@@ -28,9 +28,9 @@ export default function MiniDrawer() {
   }));
   
   return (
-    <Drawer variant="permanent" sx={{display:{xs:"none",lg:"flex"}}} open={false} >
+    <Drawer variant="permanent" sx={{display:{xs:"none",md:"flex"}}} open={true} >
       <DrawerHeader>
-        <img style={{marginLeft:28,width:100}} src={logo} />
+        <img style={{marginLeft:28,width:100}} src={logo} alt="logo"/>
       </DrawerHeader>
       <List sx={{Maxwidth:250,width:"250px"}}>
         <ListItemButton

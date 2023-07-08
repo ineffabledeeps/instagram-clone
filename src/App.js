@@ -5,6 +5,7 @@ import firstTheme from "./theme/firstTheme"
 import {ThemeProvider } from "@mui/material";
 import PostPage from "./pages/PostPage";
 import Page404 from "./pages/Page404";
+import SignupPage from "./pages/SignupPage";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<HomePage />} />
-          <Route path="/account/login" element={<LoginPage />} />
+          <Route path="/accounts/login" element={<LoginPage />} />
+          <Route path="/accounts/signup" element={<SignupPage />} />
           <Route path="/posts" element={<PostPage />} />
           <Route path="*" element={<Page404 />} />
         </Routes>

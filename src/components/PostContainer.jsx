@@ -9,11 +9,8 @@ import {
   Box,
   CardContent,
   CardActionArea,
-  Button,
-  Link,
-  TextField,
 } from "@mui/material";
-import { brown, grey } from "@mui/material/colors";
+import {grey } from "@mui/material/colors";
 import MoreHoriz from "@mui/icons-material/MoreHoriz";
 import Circle from "@mui/icons-material/Circle";
 import FavoriteRoundedIcon from "@mui/icons-material/FavoriteRounded";

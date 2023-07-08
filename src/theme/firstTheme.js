@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material";
 const firstTheme = createTheme({
   palette: {
     dark: "black",
-    instaBlue: "47B5FF",
+    instaBlue: "#47B5FF",
   },
   components: {
     MuiFilledInput: {
@@ -22,13 +22,15 @@ const firstTheme = createTheme({
     MuiButton: {
       defaultProps: {
         disableRipple: true,
-        disableElevation: true,
+        disableElevation: true
       },
       styleOverrides: {
         root: {
           "&:hover": {
-            backgroundColor: "inherit",
+            backgroundColor: "",
           },
+          textTransform:"none",
+          backgroundColor:"#47B5FF"
         },
       },
     },

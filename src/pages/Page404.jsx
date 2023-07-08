@@ -1,4 +1,5 @@
 import MiniDrawer from "../components/MiniDrawer";
+import CreatePost from "../components/CreatePost";
 import { Grid, Typography } from "@mui/material";
 
 export default function Page404() {
@@ -25,6 +26,7 @@ export default function Page404() {
           The link you followed may be broken, or the page may have been
           removed. Go back to Instagram.
         </Typography>
+        <CreatePost />
       </Grid>
     </Grid>
   );
