@@ -27,7 +27,7 @@ export default function SignupBox() {
   const inputLabelProps = { fontSize: "12px" };
 
   const handleLogin = async () => {
-    await fetch("http://localhost:4000/auth/login", {
+    await fetch("https://instagram-clone-36ye.onrender.com/auth/login", {
       method: "POST",
       credentials: "include",
       headers: {
